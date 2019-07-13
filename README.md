@@ -8,6 +8,11 @@ Code for reproducing the results in the following paper:
 
 Please check the [project site](http://www-personal.umich.edu/~wfchen/youtube3d/) for more details.
 
+## Example outputs on the Depth in the Wild (DIW) test set
+
+![qual_outputs](http://www-personal.umich.edu/~wfchen/youtube3d/qual_results_DIW_ResNet.jpg)
+
+
 ## Setup
 
 1. The code is written in `python 2.7.13`, using `pytorch 0.2.0_4`. Please make sure that you install the correct pytorch version as later versions may cause the code to break.
