@@ -11,6 +11,7 @@ from RelativeDepthDataset import RelativeDepthDataset, relative_depth_collate_fn
 from DIWDataset import DIWDatasetVal
 from YoutubeDataset import YoutubeDatasetVal
 from ReDWebNet import ReDWebNet_resnet50
+from HourglassNetwork import HourglassNetwork
 
 from torch.utils import data
 
@@ -35,7 +36,7 @@ if __name__ == '__main__':
 	print "Training args:", training_args	
 	print "#######################################################################\n\n\n"
 
-	NetworkType = {'ReDWebNet':ReDWebNet_resnet50}
+	NetworkType = {'ReDWebNet':ReDWebNet_resnet50, 'NIPS':HourglassNetwork}
 	
 	b_resnet_prep = training_args['model_name'] == 'ReDWebNet'
 	model = NetworkType[training_args['model_name']]().cuda()

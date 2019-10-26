@@ -49,5 +49,11 @@ mkdir visualize
 python test.py -t DIW_test.csv -model exp/YTmixReD_dadlr1e-4_DIW_ReDWebNet_1e-6_bs4/models/model_iter_753000.bin -vis
 ```
 
+To evaluate the pre-trained model `HourglassNetwork` trained on `NYU + DIW + YouTube3D` on the DIW dataset, run the following command:
+
+```bash
+python test.py -t DIW_test.csv -model exp/Hourglass/models/best_model_iter_852000.bin
+```
+
 ## Contact
 Please send any questions or comments to Weifeng Chen at wfchen@umich.edu.
